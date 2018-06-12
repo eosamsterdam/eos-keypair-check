@@ -1,0 +1,85 @@
+<html lang=en>
+    <meta charset=utf-8>
+    <title>EOS Amsterdam: double check your EOS Key Pair!</title>
+    <link rel=stylesheet href="index.css">
+
+    <script src=ecc.js></script>
+    <script src=lib.js></script>
+    <script src=index.js></script>
+    <body>
+      <div>
+        <div>
+          <img src="images/eos-amsterdam-vertical-big.png">
+        </div>
+        <div>
+          <h2>Double check your EOS Key Pair!</h2>
+          <p>Enter your EOS Private Key below, and press the link "Show EOS Public Key"
+          to generate the public key which belongs to the private key you entered.</p>
+          </div>
+        <div class="pane">
+          <table><tbody>
+            <tr>
+              <th>EOS private key</th>
+              <td style="text-align: left;">
+                <input style="width: 500px;" type="text" name="privKey" id="privKey" required>&nbsp;
+                <span><a href="#" id="generate-link" style="float: right;" onclick="generate()">Show EOS Public Key</a></span>
+              </td>
+            </tr></tbody>
+          </table>
+
+        </div>
+
+        <div>
+          <p>When your public key does not match the generated public key, or you see a
+          <strong>DO NOT USE</strong>, please double check! When sure you have entered
+          the correct private key, and the problem is still not resolved <a
+          href="https://docs.google.com/forms/d/1Z8yEhkzfl6Tp1_uvcQNiyfXWsIGw8WwmWt5qpaIlzQQ/viewform?edit_requested=true">please
+          enter your details here</a>. Your details will be stored so
+          EOS Amsterdam can inform you immediatly when there is an
+          option to recover your funds.
+          </p>
+
+        </div>
+
+
+        <div class="hidden pane" id="generate-pane">
+          <span id="generate-progress">
+            Recalculating private key to public key...
+          </span>
+          <div id="generate-confirm" class="hidden">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Public key</th>
+                  <td style="text-align: left;">
+                    <code id="generate-pubkey" style="width: 30em;"></code>
+                  </td>
+                  <td style="text-align: left;">
+                    <code id="generate-pubkey-error" style="width: 30em;"></code>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Private key</th>
+                  <td style="text-align: left;">
+                    <code id="generate-privkey" style="width: 30em;"></code>
+                  </td>
+                  <td style="text-align: left;">
+                    <code id="generate-privkey-error" style="width: 30em;"></code>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+          <div id="generate-compromised" class="hidden">
+            You are seeing this message because something is wrong with your private key.
+            Please double check the private key you entered. If you are sure you entered what you believe is your private key and you keep on seeing this error. <a href="https://docs.google.com/forms/d/1Z8yEhkzfl6Tp1_uvcQNiyfXWsIGw8WwmWt5qpaIlzQQ/viewform?edit_requested=true">Please enter your details here</a>.
+          </div>
+
+
+      </div>
+    </body>
+</html>
