@@ -16,7 +16,7 @@ becomes live, there will be no stopping the phishing sites to sell your EOS.
 
 See screencast here:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/g7iLLHklUBY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+[Boy Maas from EOS Amsterdam explaining the tool](https://youtu.be/g7iLLHklUBY)
 
 ### EOS Test Keypairs
 
